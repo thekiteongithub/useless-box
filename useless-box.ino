@@ -2,14 +2,14 @@
 #include <Bounce2.h>
 
 
-#define MS1 8
-#define MS2 7
-#define SWITCH 11
+#define MS1 8 // finger servo is on pin 8
+#define MS2 7 // finger servo is on pin 7
+#define SWITCH 11 // switch is on pin 11
 
-Servo ms1;
-Servo ms2;
+Servo ms1; // finger servo
+Servo ms2; // box lid servo
 int switchStatus=0, action=1;
-Bounce debouncer = Bounce();
+Bounce debouncer = Bounce(); // this is needed for a decent trigger signal
  
 void setup() {
   Serial.begin(9600);
@@ -18,17 +18,7 @@ void setup() {
   debouncer.interval(50);
   ms1.attach(MS1);
   ms2.attach(MS2);
- 
-//  ms2.write(90);  //lowest
-//  delay(1000);
-//  ms2.write(90);
-//  delay(1000);
-//  ms2.write(130); //highest
-//  
-//  ms1.write(0);   // highest
-//  delay(1000);
-//  ms1.write(80);  //lowest
-//  delay(1000);
+
 }
 
 void loop() {
@@ -43,7 +33,7 @@ void loop() {
 
      // action=7;
      Serial.println(millis());
-      Serial.println(action);
+     Serial.println(action);
 
       if(action==1){
         //box servo
