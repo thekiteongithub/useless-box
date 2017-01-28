@@ -3,7 +3,7 @@
 
 
 #define MS1 8 // finger servo is on pin 8
-#define MS2 7 // finger servo is on pin 7
+#define MS2 7 // lid servo is on pin 7
 #define SWITCH 11 // switch is on pin 11
 
 Servo ms1; // finger servo
