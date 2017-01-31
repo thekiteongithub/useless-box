@@ -6,7 +6,7 @@
 #define PIN_UNCONNECTED 0  // for seeding random number generator
 #define PIN_SWITCH 11  // switch is on pin 11
 #define PIN_FINGER 8  // finger servo is on pin 8
-#define PIN_LID 7  // finger servo is on pin 7
+#define PIN_LID 7  // lid servo is on pin 7
 #define MIN_ANGLE_FINGER 0
 #define MAX_ANGLE_FINGER 80
 #define MIN_ANGLE_LID 50
